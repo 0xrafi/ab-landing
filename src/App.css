@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.Content {
+.Container {
   width: 1000px;
   max-width: calc(100% - 20px);
   display: flex;
@@ -54,8 +54,16 @@
 .PageContent {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   height: 100%;
   flex-direction: column;
   margin: 65px;
+}
+.TextSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+  margin: 50px;
+  text-align: center;
 }

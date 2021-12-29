@@ -1,11 +1,8 @@
 import React from 'react';
-import homePic from '../img/BrindaAdit-Engagement.jpeg';
 
-function Home() {
+function LosAngeles() {
     return (
         <div className='PageContent'>
-            <img src={homePic} className="homePic" alt="homePic" />
-            Photographer Credit
 
             <div className="TextSection">
                 COME CELEBRATE WITH US!
@@ -20,4 +17,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default LosAngeles;
