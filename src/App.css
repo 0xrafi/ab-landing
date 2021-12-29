@@ -2,12 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("img/ab_background_1.png");   
   height: 100%;
   width: 100%;
-  background-position: center;
+}
+.bg {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bg::before {
+  background-image: url("img/ab_background_1.png");
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+  opacity: 0.7;
 }
 .Container {
   width: 1000px;
@@ -26,7 +42,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .line {
   width: 53px;
   height: 0;
@@ -38,9 +53,11 @@
 }
 .homePic {
   width: 70%;
+  min-width: 350px;
 }
 .stylizedLogo {
   width: 20%;
+  min-width: 150px;
   padding: 50px;
 }
 .Navbar {
