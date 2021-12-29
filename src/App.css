@@ -1,38 +1,61 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: url("img/ab_background_1.png");   
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Content {
+  width: 1000px;
+  max-width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1500px;
+  background-color: #FFFEFE;
+  flex-direction: column;
+  margin: 65px;
+}
+.Header {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.line {
+  width: 53px;
+  height: 0;
+  border: 1px solid #282c34;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homePic {
+  width: 70%;
+}
+.stylizedLogo {
+  width: 20%;
+  padding: 50px;
+}
+.Navbar {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+.PageContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  flex-direction: column;
+  margin: 65px;
 }
