@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ab-landing/static/css/main.79ca89f6.css",
+    "main.css": "/ab-landing/static/css/main.33a56098.css",
     "main.js": "/ab-landing/static/js/main.9172a79f.js",
     "static/js/787.61f1fa55.chunk.js": "/ab-landing/static/js/787.61f1fa55.chunk.js",
     "static/media/A-in-Bangalore.png": "/ab-landing/static/media/A-in-Bangalore.98bfe759d445785b58da.png",
@@ -16,12 +16,12 @@
     "static/media/axb-logo.png": "/ab-landing/static/media/axb-logo.4617729ac78be8dadc99.png",
     "static/media/AB-logo.svg": "/ab-landing/static/media/AB-logo.2997976e71c76ee0392f01f0be6ccadd.svg",
     "index.html": "/ab-landing/index.html",
-    "main.79ca89f6.css.map": "/ab-landing/static/css/main.79ca89f6.css.map",
+    "main.33a56098.css.map": "/ab-landing/static/css/main.33a56098.css.map",
     "main.9172a79f.js.map": "/ab-landing/static/js/main.9172a79f.js.map",
     "787.61f1fa55.chunk.js.map": "/ab-landing/static/js/787.61f1fa55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79ca89f6.css",
+    "static/css/main.33a56098.css",
     "static/js/main.9172a79f.js"
   ]
 }
