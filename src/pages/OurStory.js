@@ -1,8 +1,8 @@
 import React from 'react';
 
-import breakfastBangalore from '../img/Breakfast-in-Bangalore-logo.png';
+import breakfastBangalore from '../img/Breakfast-in-Bangalore-logo.jpg';
 import bTwirls from '../img/B-Twirls.gif';
-import aBangalore from '../img/A-in-Bangalore.png';
+import aBangalore from '../img/A-in-Bangalore.jpg';
 import subuSlide from '../img/Subu-Slide.gif';
 import bElement from '../img/B-in-her-Element.jpg';
 import us from '../img/Us.jpg';
@@ -10,19 +10,18 @@ import us from '../img/Us.jpg';
 
 function OurStory() {
     return (
-        <div className='PageContent'>
-            <div className='ourStoryPage'>
-            <img src={breakfastBangalore} className="homePic" />
+        <div className='TextContent'>
+            <img src={breakfastBangalore} className="normalPic" />
             <br></br>
             It all started in August of 2017. Aditya and Brinda added to the storied history of on-set romances by
             playing brother and sister on the set of Breakfast in Bangalore. Despite both sharing NYU as an alma mater
             and living three miles away from one another on the east side of New York City (represent!), their paths
             never crossed until Adit first laid eyes on Brinda - and no he wasn’t in character at the time! <br></br><br></br>
 
-            <div className='oldLine'></div> <br></br>
+            <div className='wideLine'></div> <br></br>
             <h3>It was love at first Sari!</h3> <br></br>
-            <img src={bTwirls} className="homePic" /><br></br>
-            <div className='oldLine'></div> <br></br>
+            <img src={bTwirls} className="normalPic" /><br></br>
+            <div className='wideLine'></div> <br></br>
             <img src={aBangalore} className="widePic" /><br></br>
             Aditya or as some of you might know him, Adit: unconventional in reel and real life, Aditya is constantly
             asking the question, “why?” Curious about overthrowing the norm and reassessing the how, Aditya is a natural
@@ -33,14 +32,14 @@ function OurStory() {
             the corporate landscape to see where he would fit. But that insatiable curiosity lingered, and the need to tell
             stories and reflect the cultural zeitgeist was a light that wouldn’t blow out. Sure, he could’ve chosen an easier path,
             but then what are the chances he would’ve met beautiful B? <br></br>
-            <div className='oldLine'></div> <br></br>
+            <div className='wideLine'></div> <br></br>
 
-            <img src={subuSlide} className="homePic" /><br></br>
+            <img src={subuSlide} className="normalPic" /><br></br>
 
             Titanium Lined Velvet Glove <br></br>
-            <div className='oldLine'></div> <br></br>
+            <div className='wideLine'></div> <br></br>
 
-            <img src={bElement} className="homePic" /><br></br>
+            <img src={bElement} className="normalPic" /><br></br>
 
             You see a girl like Brinda and you might think she’s an enigma. Equally deadly in silence and in laughter, B-ma
             has been obsessed with acting from a young age — never one for convention! For instance, at age 13, Brinda was
@@ -51,7 +50,7 @@ function OurStory() {
             If there’s one thing anyone knows about Brinda, it’s her verve for life and her thirst for adventure - she’s always ready to give
             things a go and never says no to a good, or even questionable idea. With roots in Pachapur, Karnataka, a fluency in Spanish that puts
             Adit’s 4 years of study to shame, and a mastery of Bharatanatyam - it’s safe to say that wherever B goes next is sure to be a memorable watch! <br></br>
-            <div className='oldLine'></div> <br></br>
+            <div className='wideLine'></div> <br></br>
 
             <img src={us} className="widePic" /><br></br>
 
@@ -72,9 +71,6 @@ function OurStory() {
             and contributing to the way we are today.<br></br>
 
             <b> FINAL AB INFINITY Video YouTube embed here </b>
-            </div>
-
-
         </div>
     );
 }

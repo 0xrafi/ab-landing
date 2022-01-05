@@ -4,14 +4,15 @@ import { NavLink } from "react-router-dom";
 interface Props {
   to: string
   text: string
+  onClick: () => {}
 }
 
-function NavItem({ to, text }: Props) {
+function NavItem({ to, text, onClick }: Props) {
   const activeStyle = {
     fontWeight: "bold",
   };
   return (
-    <li>
+    <li onClick={onClick}>
       <NavLink
         to={to}
         style={(navData) => (navData.isActive ? activeStyle : {})}

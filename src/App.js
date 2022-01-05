@@ -17,13 +17,8 @@ import stylizedLogo from './img/AB-logo.svg';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const isMobile = windowWidth < 600;
-
-  function toggleMobileNav() {
-    setShowMobileNav(wasOpened => !wasOpened);
-  }
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -40,25 +35,22 @@ function App() {
   return (
     <div className="App">
       <div className='bg'></div>
-      {isMobile &&
-        <div className='mobileNavbarWrapper'>
-          {showMobileNav ? <MobileNavbar/> : null}
-          <div className='mobileNavbarButton' onClick={toggleMobileNav}>MENU</div>
-        </div>
-      }
+      {isMobile && <MobileNavbar />}
       <div className="Container">
         <div className="Header">
-          <img src={stylizedLogo} className="stylizedLogo" alt="stylizedLogo" />
+          <img src={stylizedLogo} className="stylizedLogo" />
           {!isMobile && <FullSizeNavbar />}
         </div>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/our-story' element={<OurStory />} />
-          <Route path='/los-angeles' element={<LosAngeles />} />
-          <Route path='/rsvp' element={<RSVP />} />
-          <Route path='/web3' element={<AXB />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
+        <div className='PageContent'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/our-story' element={<OurStory />} />
+            <Route path='/los-angeles' element={<LosAngeles />} />
+            <Route path='/rsvp' element={<RSVP />} />
+            <Route path='/web3' element={<AXB />} />
+            <Route path='/about' element={<About />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );
