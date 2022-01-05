@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import NavItem from './NavItem.tsx';
 
 function MobileNavbar() {
-
-  return (
-    <div className='mobileNavbar'>
-      <NavItem to="/" text="HOME"/>
-      <NavItem to="/our-story" text="OUR STORY"/>
-      <NavItem to="/los-angeles" text="LOS ANGELES"/>
-      <NavItem to="/rsvp" text="RSVP"/>
-      <NavItem to="/web3" text="AXB"/>
-      <NavItem to="/about" text="ABOUT" />
-    </div>
-  );
+    const [showButton, setShowButton] = useState(true);
+    const [showMessage, setShowMessage] = useState(false);
+    return (
+        <CSSTransition
+            timeout={300}
+            classNames="mobileNavbar"
+        >
+            <div className='mobileNavbar'>
+                <NavItem to="/" text="Home" />
+                <NavItem to="/our-story" text="Our Story" />
+                <NavItem to="/los-angeles" text="LOS ANGELES" />
+                <NavItem to="/rsvp" text="RSVP" />
+                <NavItem to="/web3" text="AXB" />
+                <NavItem to="/about" text="ABOUT" />
+            </div>
+        </CSSTransition>
+    );
 }
 
 export default MobileNavbar;

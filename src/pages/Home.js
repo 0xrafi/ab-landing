@@ -4,20 +4,11 @@ import homePic from '../img/BrindaAdit-Engagement.jpeg';
 import divider from '../img/divider-logo.jpeg';
 
 function Home() {
-    const activeStyle = { 
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column"
-    };
-
-    const smallText = {
-        fontSize: "small"
-    }
     return (
         <div className='PageContent'>
-            <div style={activeStyle}>
+            <div className='homePicWrapper'>
             <img src={homePic} className="homePic" />
-            <div style={smallText}>Photographer Credit</div>
+            Photographer Credit
             </div>
 
             <div className="ourStoryPage">

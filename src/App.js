@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
+
+import FullSizeNavbar from './components/FullSizeNavbar';
+import MobileNavbar from './components/MobileNavbar';
+
 import Home from './pages/Home';
 import OurStory from './pages/OurStory';
 import LosAngeles from './pages/LosAngeles';
@@ -7,11 +13,6 @@ import RSVP from './pages/RSVP';
 import AXB from './pages/AXB';
 import About from './pages/About';
 
-import { Routes, Route } from 'react-router-dom';
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
-
-import FullSizeNavbar from './components/FullSizeNavbar';
-import MobileNavbar from './components/MobileNavbar';
 import stylizedLogo from './img/AB-logo.svg';
 
 function App() {
@@ -38,15 +39,11 @@ function App() {
 
   return (
     <div className="App">
-      <LazyLoadComponent>
-        <div className='bg'></div>
-      </LazyLoadComponent>
-
+      <div className='bg'></div>
       {isMobile &&
-        <div className='mobileNavbar'> 
+        <div className='mobileNavbarWrapper'>
           {showMobileNav ? <MobileNavbar /> : null}
           <div className='mobileNavbarButton' onClick={toggleMobileNav}>MENU</div>
-
         </div>
       }
       <div className="Container">

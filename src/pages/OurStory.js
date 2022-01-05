@@ -20,10 +20,10 @@ function OurStory() {
             never crossed until Adit first laid eyes on Brinda - and no he wasn’t in character at the time! <br></br><br></br>
 
             <div className='oldLine'></div> <br></br>
-            It was love at first Sari! <br></br>
+            <h3>It was love at first Sari!</h3> <br></br>
             <img src={bTwirls} className="homePic" /><br></br>
             <div className='oldLine'></div> <br></br>
-            <img src={aBangalore} className="homePic" /><br></br>
+            <img src={aBangalore} className="widePic" /><br></br>
             Aditya or as some of you might know him, Adit: unconventional in reel and real life, Aditya is constantly
             asking the question, “why?” Curious about overthrowing the norm and reassessing the how, Aditya is a natural
             born leader, an artist from birth, and a romantic at heart. Sure, he could’ve been a banker, a lawyer, a doctor,
@@ -53,9 +53,9 @@ function OurStory() {
             Adit’s 4 years of study to shame, and a mastery of Bharatanatyam - it’s safe to say that wherever B goes next is sure to be a memorable watch! <br></br>
             <div className='oldLine'></div> <br></br>
 
-            <img src={us} className="homePic" /><br></br>
+            <img src={us} className="widePic" /><br></br>
 
-            <b>AB INFINITY</b><br></br>
+            <h2>AB INFINITY</h2><br></br>
 
             Look up in the sky! It’s a brand! It’s a hashtag! It’s…a way of life!<br></br>
 

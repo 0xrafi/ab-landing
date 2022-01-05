@@ -69,7 +69,14 @@
 }
 .homePic {
   width: 70%;
-  min-width: 350px;
+  min-width: 300px;
+}
+.homePicWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: small;
+  font-family: 'Lato', sans-serif;
 }
 .laPic {
   width: 70%;
@@ -87,6 +94,7 @@
   justify-content: space-evenly;
   text-decoration: none;
   padding-top: 50px;
+  font-family: 'Lato', sans-serif;
 }
 .PageContent {
   display: flex;
@@ -113,11 +121,22 @@
   align-items: center;
   justify-content: space-evenly;
   width: 75%;
+  min-width: 300px;
   text-align: center;
   /* font-size: small; */
   row-gap: 10px;
+  line-height: 1.5;
 }
-
+.rsvpPage {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+	font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 10px;
+}
 .mobileNavbar {
   display: flex;
   flex-direction: column;
@@ -132,8 +151,12 @@
   row-gap: 10px;
   padding: 10px;
   font-size: large;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: max-height,.3s;
+  -moz-transition: max-height,.3s;
+  -o-transition: max-height,.3s;
+  transition: max-height,.3s;
 }
-
 .mobileNavbarButton {
   display: flex;
   flex-direction: column;
@@ -147,4 +170,53 @@
   row-gap: 10px;
   padding: 10px;
   cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+.mobileNavbarWrapper {
+  border-bottom: solid #EEEEEE thin;
+  width: 100%;
+  font-size: large;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+h2, h3 {
+  font-family: 'Lato', sans-serif;
+  color: #1c1c1c;
+}
+.widePic {
+  width: 100%;
+  min-width: 300px;
+}
+.miniLogo {
+  width: 10%;
+  min-width: 50px;
+}
+
+.mobileNavbar-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.mobileNavbar-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.mobileNavbar-exit {
+  opacity: 1;
+}
+.mobileNavbar-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }
