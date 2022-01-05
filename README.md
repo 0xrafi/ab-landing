@@ -1,3 +1,15 @@
+
+# AB Wedding Landing Page
+This project was created for Adit and Brinda's 2022 NFT Wedding project. 
+
+This project was deployed with gh-pages.
+
+Eslint settings were modified via ```.env.production``` and ```.env.development``` files, where ```DISABLE_ESLINT_PLUGIN=true``` and ```ESLINT_NO_DEV_ERRORS=true``` were added respectively to handle an Eslint issue I ran into.
+
+### run ```npm run deploy``` to push out the latest changes to GH Pages.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

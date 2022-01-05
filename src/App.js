@@ -42,7 +42,7 @@ function App() {
       <div className='bg'></div>
       {isMobile &&
         <div className='mobileNavbarWrapper'>
-          {showMobileNav ? <MobileNavbar onClick={toggleMobileNav}/> : null}
+          {showMobileNav ? <MobileNavbar/> : null}
           <div className='mobileNavbarButton' onClick={toggleMobileNav}>MENU</div>
         </div>
       }
