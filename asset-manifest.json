@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ab-landing/static/css/main.e5fc8dfd.css",
+    "main.js": "/ab-landing/static/js/main.a1e0fff8.js",
+    "static/js/787.61f1fa55.chunk.js": "/ab-landing/static/js/787.61f1fa55.chunk.js",
+    "static/media/A-in-Bangalore.png": "/ab-landing/static/media/A-in-Bangalore.98bfe759d445785b58da.png",
+    "static/media/Us.jpg": "/ab-landing/static/media/Us.58da4ac449852989cb6e.jpg",
+    "static/media/BrindaAdit-Engagement.jpeg": "/ab-landing/static/media/BrindaAdit-Engagement.a867ae9b398ac87e3af0.jpeg",
+    "static/media/Subu-Slide.gif": "/ab-landing/static/media/Subu-Slide.f460d5be905f9f4685c5.gif",
+    "static/media/ab_background_1.jpeg": "/ab-landing/static/media/ab_background_1.cdebe2fdce2e5deaf486.jpeg",
+    "static/media/B-Twirls.gif": "/ab-landing/static/media/B-Twirls.3f42b6ae6c3e1374e9bd.gif",
+    "static/media/Breakfast-in-Bangalore-logo.png": "/ab-landing/static/media/Breakfast-in-Bangalore-logo.8d854b8381a2532cea03.png",
+    "static/media/B-in-her-Element.jpg": "/ab-landing/static/media/B-in-her-Element.87ed24bd6998ee106bd2.jpg",
+    "static/media/LA-map.png": "/ab-landing/static/media/LA-map.81c02328781bc177eddc.png",
+    "static/media/divider-logo.jpeg": "/ab-landing/static/media/divider-logo.6fb85f00b6c69ae2338f.jpeg",
+    "static/media/axb-logo.png": "/ab-landing/static/media/axb-logo.4617729ac78be8dadc99.png",
+    "static/media/AB-logo.svg": "/ab-landing/static/media/AB-logo.2997976e71c76ee0392f01f0be6ccadd.svg",
+    "index.html": "/ab-landing/index.html",
+    "main.e5fc8dfd.css.map": "/ab-landing/static/css/main.e5fc8dfd.css.map",
+    "main.a1e0fff8.js.map": "/ab-landing/static/js/main.a1e0fff8.js.map",
+    "787.61f1fa55.chunk.js.map": "/ab-landing/static/js/787.61f1fa55.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5fc8dfd.css",
+    "static/js/main.a1e0fff8.js"
+  ]
+}
