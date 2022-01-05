@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <div className='bg'></div> */}
+      <div className='bg'></div>
       {isMobile &&
         <div className='mobileNavbarWrapper'>
           {showMobileNav ? <MobileNavbar onClick={toggleMobileNav}/> : null}
