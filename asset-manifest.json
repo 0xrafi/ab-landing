@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ab-landing/static/css/main.4f7c921d.css",
-    "main.js": "/ab-landing/static/js/main.f66f2878.js",
+    "main.css": "/ab-landing/static/css/main.9f8999e9.css",
+    "main.js": "/ab-landing/static/js/main.74c8c445.js",
     "static/js/787.61f1fa55.chunk.js": "/ab-landing/static/js/787.61f1fa55.chunk.js",
     "static/media/Subu-Slide.gif": "/ab-landing/static/media/Subu-Slide.f460d5be905f9f4685c5.gif",
     "static/media/ab_background_1.jpeg": "/ab-landing/static/media/ab_background_1.cdebe2fdce2e5deaf486.jpeg",
@@ -17,12 +17,12 @@
     "static/media/axb-logo.png": "/ab-landing/static/media/axb-logo.4617729ac78be8dadc99.png",
     "static/media/AB-logo.svg": "/ab-landing/static/media/AB-logo.2997976e71c76ee0392f01f0be6ccadd.svg",
     "index.html": "/ab-landing/index.html",
-    "main.4f7c921d.css.map": "/ab-landing/static/css/main.4f7c921d.css.map",
-    "main.f66f2878.js.map": "/ab-landing/static/js/main.f66f2878.js.map",
+    "main.9f8999e9.css.map": "/ab-landing/static/css/main.9f8999e9.css.map",
+    "main.74c8c445.js.map": "/ab-landing/static/js/main.74c8c445.js.map",
     "787.61f1fa55.chunk.js.map": "/ab-landing/static/js/787.61f1fa55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f7c921d.css",
-    "static/js/main.f66f2878.js"
+    "static/css/main.9f8999e9.css",
+    "static/js/main.74c8c445.js"
   ]
 }
