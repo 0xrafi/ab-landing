@@ -122,18 +122,11 @@
   width: 100%;
   text-align: center;
   list-style: none;
-  /* border-style: solid;
-  border-color: #EEEEEE;
-  border-width: thin; */
   border-bottom: solid #EEEEEE thin;
   row-gap: 10px;
   padding: 10px;
   font-size: large;
   font-family: 'Lato', sans-serif;
-  -webkit-transition: max-height,.3s;
-  -moz-transition: max-height,.3s;
-  -o-transition: max-height,.3s;
-  transition: max-height,.3s;
 }
 .mobileNavbarButton {
   display: flex;
@@ -154,6 +147,9 @@
   border-bottom: solid #EEEEEE thin;
   width: 100%;
   font-size: large;
+  top: 0;
+  position:-webkit-sticky;
+  position: sticky;
 }
 input {
   width: 100%;
@@ -197,4 +193,12 @@ h2, h3 {
 .dividerImage {
   width: 30%;
   min-width: 150px;
+}
+.hotelLink {
+  color: #CDA66F;
+  text-decoration: underline;
+}
+
+.hotelLink:hover{
+  color:black;
 }

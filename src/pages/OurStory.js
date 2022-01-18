@@ -11,7 +11,7 @@ import us from '../img/Us.jpg';
 function OurStory() {
     return (
         <div className='TextContent'>
-            <img src={breakfastBangalore} className="normalPic" />
+            <img src={breakfastBangalore} className="widePic" />
             <br></br>
             It all started in August of 2017. Aditya and Brinda added to the storied history of on-set romances by
             playing brother and sister on the set of Breakfast in Bangalore. Despite both sharing NYU as an alma mater
@@ -20,7 +20,7 @@ function OurStory() {
 
             <div className='wideLine'></div> <br></br>
             <h3>It was love at first Sari!</h3> <br></br>
-            <img src={bTwirls} className="normalPic" /><br></br>
+            <img src={bTwirls} className="widePic" /><br></br>
             <div className='wideLine'></div> <br></br>
             <img src={aBangalore} className="widePic" /><br></br>
             Aditya or as some of you might know him, Adit: unconventional in reel and real life, Aditya is constantly
@@ -34,7 +34,7 @@ function OurStory() {
             but then what are the chances he would’ve met beautiful B? <br></br>
             <div className='wideLine'></div> <br></br>
 
-            <img src={subuSlide} className="normalPic" /><br></br>
+            <img src={subuSlide} className="widePic" /><br></br>
 
             Titanium Lined Velvet Glove <br></br>
             <div className='wideLine'></div> <br></br>

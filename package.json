@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rafi-fyi.github.io/ab-landing",
+  "homepage": "http://abxinfinity.com",
   "name": "ablanding",
   "version": "0.1.0",
   "private": true,
@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'abxinfinity.com' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

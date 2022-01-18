@@ -8,18 +8,14 @@ function Home() {
         <>
             <div className='homePicWrapper'>
                 <img src={homePic} className="normalPic" />
-                Photographer Credit
+                Alchemedia Studios NY
             </div>
-
             <div className="TextContent">
                 <h2>COME CELEBRATE WITH US!</h2>
+                <h3>JUNE 24-25, 2022</h3>
                 <img src={divider} className="dividerImage" />
-                {/* <div className="oldLine"></div> */}
-                <h2>#abinfinity</h2><br></br>
-                <h3>THE WEDDING DATE, 2022</h3>
-                <img src={divider} className="dividerImage" />
-                {/* <div className="oldLine"></div> */}
                 Our wedding will be the first experience of its kind, turning our cherished moments into infinitely collectible and timeless tradeable tokens on the Ethereum blockchain.
+                <h2>#abinfinity</h2>
             </div>
         </>
     );

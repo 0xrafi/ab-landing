@@ -4,6 +4,11 @@ import laMap from '../img/LA-map.png';
 function LosAngeles() {
     return (
         <div className='TextContent'>
+            
+            <a href="https://book.passkey.com/go/DixitDileepWedding2022">
+                
+                <div className='hotelLink'>Wedding Room Block Reservation</div>
+            </a>
             <b>Wedding Ceremony</b>
             Friday, June 24th 2022<br></br>
             Catalina Point<br></br>
