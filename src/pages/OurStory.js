@@ -19,11 +19,11 @@ function OurStory() {
             never crossed until Adit first laid eyes on Brinda - and no he wasn’t in character at the time! <br></br><br></br>
 
             <div className='wideLine'></div> <br></br>
-            <h3>It was love at first Sari!</h3> <br></br>
+            <h2>It was love at first Sari!</h2> <br></br>
             <img src={bTwirls} className="widePic" /><br></br>
-            <div className='wideLine'></div> <br></br>
+            <h2>Unconventional in Reel and Real Life</h2><br></br>
             <img src={aBangalore} className="widePic" /><br></br>
-            Aditya or as some of you might know him, Adit: unconventional in reel and real life, Aditya is constantly
+            Aditya is constantly
             asking the question, “why?” Curious about overthrowing the norm and reassessing the how, Aditya is a natural
             born leader, an artist from birth, and a romantic at heart. Sure, he could’ve been a banker, a lawyer, a doctor,
             or followed his father into being an engineer. Little Aditya was a chubby kid with snoopy glasses and a mind
@@ -31,13 +31,12 @@ function OurStory() {
             others someone to relate to. By the time he graduated NYU, he’d worked at least 10 different industries within
             the corporate landscape to see where he would fit. But that insatiable curiosity lingered, and the need to tell
             stories and reflect the cultural zeitgeist was a light that wouldn’t blow out. Sure, he could’ve chosen an easier path,
-            but then what are the chances he would’ve met beautiful B? <br></br>
-            <div className='wideLine'></div> <br></br>
+            but then what are the chances he would’ve met beautiful B? <br></br><br></br>
 
             <img src={subuSlide} className="widePic" /><br></br>
+            <div className='wideLine'></div> 
 
-            Titanium Lined Velvet Glove <br></br>
-            <div className='wideLine'></div> <br></br>
+            <h2>Titanium Lined Velvet Glove</h2> <br></br>
 
             <img src={bElement} className="normalPic" /><br></br>
 
@@ -49,16 +48,14 @@ function OurStory() {
             step to move to New York City on her own to pursue drama and the wonderful world of theatre - and she hasn’t looked back since!
             If there’s one thing anyone knows about Brinda, it’s her verve for life and her thirst for adventure - she’s always ready to give
             things a go and never says no to a good, or even questionable idea. With roots in Pachapur, Karnataka, a fluency in Spanish that puts
-            Adit’s 4 years of study to shame, and a mastery of Bharatanatyam - it’s safe to say that wherever B goes next is sure to be a memorable watch! <br></br>
-            <div className='wideLine'></div> <br></br>
-
+            Adit’s 4 years of study to shame, and a mastery of Bharatanatyam - it’s safe to say that wherever B goes next is sure to be a memorable watch! <br></br><br></br>
+            <div className='wideLine'></div> 
+            <h2>AB INFINITY</h2><br></br>
             <img src={us} className="widePic" /><br></br>
 
-            <h2>AB INFINITY</h2><br></br>
+            Look up in the sky! It’s a brand! It’s a hashtag! It’s … a way of life!<br></br>
 
-            Look up in the sky! It’s a brand! It’s a hashtag! It’s…a way of life!<br></br>
-
-            AB Infinity just sort of….happened: a conglomerate of the best parts of our two paramours, AB infinity is an emotion,
+            AB Infinity just sort of … happened: a conglomerate of the best parts of our two paramours, AB infinity is an emotion,
             a union, and a symbol of the future. It’s consistent yet ever expanding. At a time when love was at the back burner of
             their priorities, neither A or B was expecting their lives to change forever. Out of a collective and refreshing respect
             for one another’s work, life, and outlook was born a discovery of shared ambitions, and a safe haven to express their hopes
@@ -70,7 +67,7 @@ function OurStory() {
             share this wedding weekend with you. This is a special moment in time, and we want to honor YOU for being a part of our lives
             and contributing to the way we are today.<br></br>
 
-            <b> FINAL AB INFINITY Video YouTube embed here </b>
+            <iframe width="100%" height="500" src="https://player.vimeo.com/video/671746700" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
         </div>
     );
 }
