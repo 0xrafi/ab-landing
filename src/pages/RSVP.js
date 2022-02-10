@@ -1,38 +1,58 @@
 import React, { useState, useEffect } from 'react';
 
+const Papa = require("papaparse");
+
 import rsvpPic from '../img/ABRsvpEngagementPic.jpeg';
+
+const parseFile = () => new Promise((resolve) => {
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRpdEblJlslYiGTcfGCv4keTIYrHg_aceu_iiPalEfXS9VM_IKiIFPqlUN8YEbYwQkWK5qdP0ZwDqcZ/pub?output=csv", {
+        download: true,
+        header: true,
+        complete: (results) => {
+            resolve(results.data);
+        }
+    });
+});
 
 function RSVP() {
 
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
+    const [spreadsheetData, setSpreadsheetData] = useState({}); 
 
-    const onChangeHandler = event => {
-        setPassword(event.target.value);
+    useEffect(() => {
+        const parsedData = parseFile().then((response) => {
+            console.log(response);
+            setSpreadsheetData(response);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+        // setSpreadsheetData(parsedData);
+      }, []);
+    
+      const guestCounts = Array.from(spreadsheetData); 
+
+    const getGuestFromEmail = email => {
+        return spreadsheetData.find(function(row) {
+            return row.Email === email;
+        });
     };
-    // useEffect(() => {
-    //     window.addEventListener("load", function() {
-    //         const form = document.getElementById('my-form');
-    //         form.addEventListener("submit", function(e) {
-    //           e.preventDefault();
-    //           const data = new FormData(form);
-    //           const action = e.target.action;
-    //           fetch(action, {
-    //             method: 'POST',
-    //             body: data,
-    //           })
-    //           .then(() => {
-    //             alert("Success!");
-    //           })
-    //         });
-    //       });          
-    // }, []);
+
+    const buildOptions = () => {
+        var arr = [];
+        for (let i = 1; i <= getGuestFromEmail(email).NumberGuests; i++) {
+            arr.push(<option value={`${i}`}>{i}</option>)
+        }
+        return arr; 
+    }
+
     return (
         <div className='rsvpPage'>
             <img src={rsvpPic} className="normalPic" />
             Please RSVP by April 15th, 2022.<br></br><br></br>
 
-            {password == "ABLA2022" || password == "abla2022" ?
+            {password == "ABLA2022" || password == "abla2022" && getGuestFromEmail(email) ?
 
                 <form method="POST" action="https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec" id="my-form">
                     <div>
@@ -46,33 +66,32 @@ function RSVP() {
                     <br></br>
                     <div>
                         <label>How many guests will be in your party? *</label>
-                        <select name="NumGuests">
-                            <option value="oneGuest">1</option>
-                            <option value="twoGuest">2</option>
+                        <select name="NumberOfGuests">
+                            { buildOptions() }
                         </select>
                     </div>
                     <br></br>
                     <div>
                         <label>Are you attending the wedding? *</label>
                         <select name="AttendingWedding">
-                            <option value="yesWedding">Yes</option>
-                            <option value="noWedding">No</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br></br>
                     <div>
                         <label>Are you attending the concert? *</label>
                         <select name="AttendingConcert">
-                            <option value="yesConcert">Yes</option>
-                            <option value="noConcert">No</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br></br>
                     <div>
                         <label>Are you attending the reception? *</label>
                         <select name="AttendingReception">
-                            <option value="yesReception">Yes</option>
-                            <option value="noReception">No</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br></br>
@@ -82,7 +101,9 @@ function RSVP() {
                     <label>Enter the password:</label>
                     <input
                         value={password}
-                        onChange={onChangeHandler}
+                        onChange={event => {
+                            setPassword(event.target.value);
+                        }}
                         name='password'
                         type='text'
 
@@ -91,6 +112,9 @@ function RSVP() {
                     <label>Enter your email:</label>
                     <input
                         value={email}
+                        onChange={event => {
+                            setEmail(event.target.value);
+                        }}
                         name='email'
                         type='text'
                     />
