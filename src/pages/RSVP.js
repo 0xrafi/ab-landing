@@ -18,23 +18,23 @@ function RSVP() {
 
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
-    const [spreadsheetData, setSpreadsheetData] = useState({}); 
+    const [spreadsheetData, setSpreadsheetData] = useState({});
 
     useEffect(() => {
         const parsedData = parseFile().then((response) => {
             console.log(response);
             setSpreadsheetData(response);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
+        })
+            .catch((err) => {
+                console.log(err);
+            });
         // setSpreadsheetData(parsedData);
-      }, []);
-    
-      const guestCounts = Array.from(spreadsheetData); 
+    }, []);
+
+    const guestCounts = Array.from(spreadsheetData);
 
     const getGuestFromEmail = email => {
-        return spreadsheetData.find(function(row) {
+        return spreadsheetData.find(function (row) {
             return row.Email === email;
         });
     };
@@ -44,7 +44,7 @@ function RSVP() {
         for (let i = 1; i <= getGuestFromEmail(email).NumberGuests; i++) {
             arr.push(<option value={`${i}`}>{i}</option>)
         }
-        return arr; 
+        return arr;
     }
 
     return (
@@ -53,8 +53,15 @@ function RSVP() {
             Please RSVP by April 15th, 2022.<br></br><br></br>
 
             {password == "ABLA2022" || password == "abla2022" && getGuestFromEmail(email) ?
-
                 <form method="POST" action="https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec" id="my-form">
+                     <div id="hide">
+                        <input
+                            name='Email'
+                            value={email}
+                            type='text'
+                            required
+                        />
+                    </div>
                     <div>
                         <label>Name *</label>
                         <input
@@ -67,7 +74,7 @@ function RSVP() {
                     <div>
                         <label>How many guests will be in your party? *</label>
                         <select name="NumberOfGuests">
-                            { buildOptions() }
+                            {buildOptions()}
                         </select>
                     </div>
                     <br></br>

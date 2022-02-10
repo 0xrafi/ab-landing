@@ -166,6 +166,11 @@ input, select {
   box-sizing: border-box;
   border-radius: 2px;
 }
+
+input:disabled {
+  background: rgb(235,235,228);
+
+}
 button {
   align-items: center;
 }
@@ -206,4 +211,8 @@ h2, h3 {
 }
 .hotelLink:hover{
   color:black;
+}
+
+#hide {
+  display: none;
 }
