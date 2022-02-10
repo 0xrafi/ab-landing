@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.44642583.css",
-    "main.js": "/static/js/main.28661d5b.js",
+    "main.css": "/static/css/main.128c8c67.css",
+    "main.js": "/static/js/main.7065c4c8.js",
     "static/js/787.61f1fa55.chunk.js": "/static/js/787.61f1fa55.chunk.js",
     "static/media/Subu-Slide.gif": "/static/media/Subu-Slide.f460d5be905f9f4685c5.gif",
     "static/media/ab_background_1.jpeg": "/static/media/ab_background_1.cdebe2fdce2e5deaf486.jpeg",
@@ -17,12 +17,12 @@
     "static/media/axb-logo.png": "/static/media/axb-logo.4617729ac78be8dadc99.png",
     "static/media/AB-logo.svg": "/static/media/AB-logo.2997976e71c76ee0392f01f0be6ccadd.svg",
     "index.html": "/index.html",
-    "main.44642583.css.map": "/static/css/main.44642583.css.map",
-    "main.28661d5b.js.map": "/static/js/main.28661d5b.js.map",
+    "main.128c8c67.css.map": "/static/css/main.128c8c67.css.map",
+    "main.7065c4c8.js.map": "/static/js/main.7065c4c8.js.map",
     "787.61f1fa55.chunk.js.map": "/static/js/787.61f1fa55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44642583.css",
-    "static/js/main.28661d5b.js"
+    "static/css/main.128c8c67.css",
+    "static/js/main.7065c4c8.js"
   ]
 }
