@@ -34,7 +34,7 @@ function RSVP() {
 
     const getGuestFromEmail = email => {
         return spreadsheetData.find(function (row) {
-            return row.Email === email;
+            return row.Email.replace(/\s/g, '').toLowerCase() === email;
         });
     };
 
