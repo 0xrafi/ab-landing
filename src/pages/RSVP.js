@@ -28,7 +28,6 @@ function RSVP() {
             .catch((err) => {
                 console.log(err);
             });
-        // setSpreadsheetData(parsedData);
     }, []);
 
     const guestCounts = Array.from(spreadsheetData);
@@ -52,9 +51,9 @@ function RSVP() {
             <img src={rsvpPic} className="normalPic" />
             Please RSVP by April 15th, 2022.<br></br><br></br>
 
-            {password == "ABLA2022" || password == "abla2022" && getGuestFromEmail(email) ?
+            {(password == "ABLA2022" || password == "abla2022") && getGuestFromEmail(email) ?
                 <form method="POST" action="https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec" id="my-form">
-                     <div id="hide">
+                    <div id="hide">
                         <input
                             name='Email'
                             value={email}
