@@ -101,7 +101,7 @@ function RSVP() {
                         </select>
                     </div>
                     <br></br>
-                    <button type="submit">Send</button>
+                    <div className='buttonWrapper'><button type="submit">RSVP</button></div>
                 </form> :
                 <div>
                     <label>Enter the password:</label>
