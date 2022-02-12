@@ -15,14 +15,12 @@ const parseFile = () => new Promise((resolve) => {
 });
 
 function RSVP() {
-
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
     const [spreadsheetData, setSpreadsheetData] = useState({});
 
     useEffect(() => {
         const parsedData = parseFile().then((response) => {
-            console.log(response);
             setSpreadsheetData(response);
         })
             .catch((err) => {
@@ -46,13 +44,28 @@ function RSVP() {
         return arr;
     }
 
+    const onSubmit = (event) => {
+        event.preventDefault();
+        const form = document.getElementById('my-form');
+        const action = event.target.action;
+        const data = new FormData(form);
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          alert("You have successfully RSVPed!");
+          window.location.href = "/";
+        })
+    }
+
     return (
         <div className='rsvpPage'>
             <img src={rsvpPic} className="normalPic" />
             Please RSVP by April 15th, 2022.<br></br><br></br>
 
             {(password == "ABLA2022" || password == "abla2022") && getGuestFromEmail(email) ?
-                <form method="POST" action="https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec" id="my-form">
+                <form method="POST" action="https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec" id="my-form" onSubmit={onSubmit}>
                     <div id="hide">
                         <input
                             name='Email'
