@@ -18,13 +18,12 @@ function LosAngeles() {
                     Catalina Point<br></br>
                     Ceremony: 8:00 AM<br></br>
                     Lunch to follow<br></br>
-                    Breakfast served at the Channel Islands Suite from 6:30 AM<br></br>
                     <i>Indian Formal Attire</i><br></br>
 
                     <b>Live Music Concert featuring Special Guests</b>
                     Friday, June 24th 2022<br></br>
                     Terranea Pool<br></br>
-                    Beer, Wine & Hors d’oeuvres: 7:00 PM<br></br>
+                    Start time TBD<br></br>
                     <i>Beach Concert Attire</i><br></br>
 
                     <b>Wedding Reception</b>
