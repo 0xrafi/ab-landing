@@ -1,8 +1,14 @@
 
 # AB Wedding Landing Page
+
+### TODO
+add registry page, add info to NFT page
+
+
+
 This project was created for Adit and Brinda's 2022 NFT Wedding project. 
 
-This project was deployed with gh-pages.
+This project was deployed with `gh-pages`.
 
 Eslint settings were modified via ```.env.production``` and ```.env.development``` files, where ```DISABLE_ESLINT_PLUGIN=true``` and ```ESLINT_NO_DEV_ERRORS=true``` were added respectively to handle an Eslint issue I ran into.
 
