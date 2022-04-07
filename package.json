@@ -24,7 +24,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build && echo 'abxinfinity.com' > ./build/CNAME",
+    "predeploy": "npm run build && echo 'abxinfinity.com' > ./build/CNAME && cp ./404.html ./build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
