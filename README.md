@@ -2,7 +2,7 @@
 # AB Wedding Landing Page
 
 ### TODO
-add registry page, add info to NFT page
+Add registry page, add info to NFT page.
 
 
 

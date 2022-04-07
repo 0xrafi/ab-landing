@@ -10,6 +10,7 @@ function FullSizeNavbar() {
       <NavItem to="/our-story" text="Our Story"/>
       <NavItem to="/los-angeles" text="Los Angeles"/>
       <NavItem to="/rsvp" text="RSVP"/>
+      <NavItem to="/registry" text="Registry"/>
       <NavItem to="/web3" text="AXB"/>
       <NavItem to="/about" text="About" />
       <div className='navLine'></div>

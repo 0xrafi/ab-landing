@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import OurStory from './pages/OurStory';
 import LosAngeles from './pages/LosAngeles';
 import RSVP from './pages/RSVP';
+import Registry from './pages/Registry';
 import AXB from './pages/AXB';
 import About from './pages/About';
 
@@ -47,6 +48,7 @@ function App() {
             <Route path='/our-story' element={<OurStory />} />
             <Route path='/los-angeles' element={<LosAngeles />} />
             <Route path='/rsvp' element={<RSVP />} />
+            <Route path='/registry' element={<Registry />} />
             <Route path='/web3' element={<AXB />} />
             <Route path='/about' element={<About />} />
           </Routes>

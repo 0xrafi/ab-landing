@@ -16,6 +16,7 @@ function MobileNavbar() {
                 <NavItem to="/our-story" text="Our Story" onClick={toggleMobileNav} />
                 <NavItem to="/los-angeles" text="Los Angeles" onClick={toggleMobileNav} />
                 <NavItem to="/rsvp" text="RSVP" onClick={toggleMobileNav} />
+                <NavItem to="/registry" text="Registry" onClick={toggleMobileNav} />
                 <NavItem to="/web3" text="AXB" onClick={toggleMobileNav} />
                 <NavItem to="/about" text="About" onClick={toggleMobileNav} />
             </div> : null}
