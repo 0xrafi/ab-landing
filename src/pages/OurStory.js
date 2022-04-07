@@ -1,6 +1,5 @@
 import React from 'react';
 
-import breakfastBangalore from '../img/Breakfast-in-Bangalore-logo.jpg';
 import bTwirls from '../img/B-Twirls.gif';
 import aBangalore from '../img/A-in-Bangalore.jpg';
 import subuSlide from '../img/Subu-Slide.gif';
@@ -11,13 +10,13 @@ import us from '../img/Us.jpg';
 function OurStory() {
     return (
         <div className='TextContent'>
-            <img src={breakfastBangalore} className="widePic" />
+            <iframe width="100%" height="300" src="https://player.vimeo.com/video/696693117" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            <iframe width="100%" height="300" src="https://player.vimeo.com/video/696707531" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
             <br></br>
             It all started in August of 2017. Aditya and Brinda added to the storied history of on-set romances by
             playing brother and sister on the set of Breakfast in Bangalore. Despite both sharing NYU as an alma mater
             and living three miles away from one another on the east side of New York City (represent!), their paths
             never crossed until Adit first laid eyes on Brinda - and no he wasn’t in character at the time! <br></br><br></br>
-
             <div className='wideLine'></div> <br></br>
             <h2>It was love at first Sari!</h2> <br></br>
             <img src={bTwirls} className="widePic" /><br></br>

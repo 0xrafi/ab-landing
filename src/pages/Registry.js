@@ -1,32 +1,13 @@
-import React from 'react';
-
-import breakfastBangalore from '../img/Breakfast-in-Bangalore-logo.jpg';
-
+import React, { useEffect } from 'react';
+import {loadZolaRegistry} from '../scripts/loadZola'
 function Registry() {
     useEffect(() => {
-        const script = document.createElement('script');
-      
-        script.src = "https://use.typekit.net/foobar.js";
-        script.async = true;
-      
-        document.body.appendChild(script);
-      
-        return () => {
-          document.body.removeChild(script);
-        }
-      }, []);
+        loadZolaRegistry();
+    }, []);
 
     return (
-        <div className='rsvpPage'>
-            <img src={breakfastBangalore} className="normalPic" />
-            <br></br>
-            <a class="zola-registry-embed" href="MY ZOLA URL HERE" data-registry-key="MY ZOLA REGISTRY NAME HERE">
-                Our Zola Wedding Registry
-                </a>
-                <script>
-                    !function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}
-                (document,"script","zola-wjs");
-                </script>
+        <div className='textContent'>
+            <a className="zola-registry-embed" href="https://www.zola.com/registry/abinfinity" data-registry-key="abinfinity"/>
         </div>
     );
 }
