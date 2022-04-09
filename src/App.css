@@ -200,6 +200,10 @@ h2, h3 {
   min-width: 150px;
   padding-top: 50px;
 }
+.zolaLogo {
+  width: 20%;
+  min-width: 150px;
+}
 .dividerImage {
   width: 30%;
   min-width: 150px;
