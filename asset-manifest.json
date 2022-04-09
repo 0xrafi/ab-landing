@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e39a5a5.css",
-    "main.js": "/static/js/main.13216d26.js",
+    "main.css": "/static/css/main.15b983cb.css",
+    "main.js": "/static/js/main.dee37624.js",
     "static/js/787.61f1fa55.chunk.js": "/static/js/787.61f1fa55.chunk.js",
     "static/media/Subu-Slide.gif": "/static/media/Subu-Slide.f460d5be905f9f4685c5.gif",
     "static/media/ab_background_1.jpeg": "/static/media/ab_background_1.cdebe2fdce2e5deaf486.jpeg",
@@ -12,16 +12,18 @@
     "static/media/B-in-her-Element.jpg": "/static/media/B-in-her-Element.87ed24bd6998ee106bd2.jpg",
     "static/media/LA-map.png": "/static/media/LA-map.81c02328781bc177eddc.png",
     "static/media/divider-logo.jpeg": "/static/media/divider-logo.6fb85f00b6c69ae2338f.jpeg",
+    "static/media/registry.jpeg": "/static/media/registry.e80c4ceb199ef5bb95a5.jpeg",
     "static/media/A-in-Bangalore.jpg": "/static/media/A-in-Bangalore.c37bb783a9c4edcf4d3c.jpg",
+    "static/media/zolalogo.jpeg": "/static/media/zolalogo.21229f9823908ab36fcd.jpeg",
     "static/media/axb-logo.png": "/static/media/axb-logo.4617729ac78be8dadc99.png",
     "static/media/AB-logo.svg": "/static/media/AB-logo.2997976e71c76ee0392f01f0be6ccadd.svg",
     "index.html": "/index.html",
-    "main.2e39a5a5.css.map": "/static/css/main.2e39a5a5.css.map",
-    "main.13216d26.js.map": "/static/js/main.13216d26.js.map",
+    "main.15b983cb.css.map": "/static/css/main.15b983cb.css.map",
+    "main.dee37624.js.map": "/static/js/main.dee37624.js.map",
     "787.61f1fa55.chunk.js.map": "/static/js/787.61f1fa55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e39a5a5.css",
-    "static/js/main.13216d26.js"
+    "static/css/main.15b983cb.css",
+    "static/js/main.dee37624.js"
   ]
 }
