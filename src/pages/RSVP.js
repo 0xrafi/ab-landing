@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import RsvpForm from '../components/RsvpForm.tsx';
+import rsvpPic from '../img/ABRsvpEngagementPic.jpeg';
 
 const Papa = require("papaparse");
-
-import rsvpPic from '../img/ABRsvpEngagementPic.jpeg';
-import RsvpForm from '../components/RsvpForm.tsx';
 
 const parseFile = () => new Promise((resolve) => {
     Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRpdEblJlslYiGTcfGCv4keTIYrHg_aceu_iiPalEfXS9VM_IKiIFPqlUN8YEbYwQkWK5qdP0ZwDqcZ/pub?output=csv", {
@@ -44,21 +43,6 @@ function RSVP() {
         }
         return arr;
     }
-
-    // const onSubmit = (event) => {
-    //     event.preventDefault();
-    //     const form = document.getElementById('my-form');
-    //     const action = event.target.action;
-    //     const data = new FormData(form);
-    //     fetch(action, {
-    //         method: 'POST',
-    //         body: data,
-    //     })
-    //         .then(() => {
-    //             alert("You have successfully RSVPed!");
-    //             window.location.href = "/";
-    //         })
-    // }
 
     return (
         <div className='rsvpPage'>
