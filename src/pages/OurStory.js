@@ -6,7 +6,6 @@ import subuSlide from '../img/Subu-Slide.gif';
 import bElement from '../img/B-in-her-Element.jpg';
 import us from '../img/Us.jpg';
 
-
 function OurStory() {
     return (
         <div className='TextContent'>

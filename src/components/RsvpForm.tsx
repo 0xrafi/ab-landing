@@ -5,27 +5,28 @@ interface Props {
   buildOptions: () => {};
 }
 
-function RsvpForm({ email, buildOptions }: Props) {
+const googleScriptURL =
+  "https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec";
 
-    const onSubmit = (event) => {
-        event.preventDefault();
-        const form = document.getElementById('my-form');
-        const action = event.target.action;
-        const data = new FormData(form as HTMLFormElement);
-        fetch(action, {
-            method: 'POST',
-            body: data,
-        })
-            .then(() => {
-                alert("You have successfully RSVPed!");
-                window.location.href = "/";
-            })
-    }
+function RsvpForm({ email, buildOptions }: Props) {
+  const onSubmit = (event) => {
+    event.preventDefault();
+    const form = document.getElementById("my-form");
+    const action = event.target.action;
+    const data = new FormData(form as HTMLFormElement);
+    fetch(action, {
+      method: "POST",
+      body: data,
+    }).then(() => {
+      alert("You have successfully RSVPed!");
+      window.location.href = "/";
+    });
+  };
 
   return (
     <form
       method="POST"
-      action="https://script.google.com/macros/s/AKfycbzKWk4MUWW_tqA9ji5kR_kGnem7eRv1BJXlfuOLJHwQa4uMlqL60KyvjKzAzh1-WTs5/exec"
+      action={googleScriptURL}
       id="my-form"
       onSubmit={onSubmit}
     >

@@ -5,7 +5,6 @@ import diamondHands from '../img/diamond-hands.png';
 import lightbulb from '../img/lightbulb.png';
 import crypto from '../img/crypto.png';
 
-
 function About() {
     return (
         <div className="TextContent">

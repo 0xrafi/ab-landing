@@ -4,8 +4,11 @@ import rsvpPic from '../img/ABRsvpEngagementPic.jpeg';
 
 const Papa = require("papaparse");
 
+const guestSpreedsheetCsvURL =
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRpdEblJlslYiGTcfGCv4keTIYrHg_aceu_iiPalEfXS9VM_IKiIFPqlUN8YEbYwQkWK5qdP0ZwDqcZ/pub?output=csv";
+
 const parseFile = () => new Promise((resolve) => {
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRpdEblJlslYiGTcfGCv4keTIYrHg_aceu_iiPalEfXS9VM_IKiIFPqlUN8YEbYwQkWK5qdP0ZwDqcZ/pub?output=csv", {
+    Papa.parse(guestSpreedsheetCsvURL, {
         download: true,
         header: true,
         complete: (results) => {
@@ -28,11 +31,13 @@ function RSVP() {
             });
     }, []);
 
-    const guestCounts = Array.from(spreadsheetData);
+    const cleanInputAndCase = str => {
+        return str.replace(/\s/g, '').toLowerCase();
+    }
 
     const getGuestFromEmail = email => {
         return spreadsheetData.find(function (row) {
-            return row.Email.replace(/\s/g, '').toLowerCase() === email.replace(/\s/g, '').toLowerCase();
+            return cleanInputAndCase(row.Email) === cleanInputAndCase(email);
         });
     };
 
@@ -45,9 +50,9 @@ function RSVP() {
     }
 
     return (
-        <div className='rsvpPage'>
+        <>
             <img src={rsvpPic} className="normalPic" />
-            Please RSVP by April 15th, 2022.<br></br><br></br>
+            Please RSVP by April 15th, 2022.
             {(password == "ABLA2022" || password == "abla2022") && getGuestFromEmail(email) ?
                 <RsvpForm email={email} buildOptions={buildOptions} /> :
                 <div>
@@ -72,7 +77,7 @@ function RSVP() {
                     />
                 </div>
             }
-        </div>
+        </>
     );
 }
 
