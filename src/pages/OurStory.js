@@ -10,8 +10,8 @@ import us from '../img/Us.jpg';
 function OurStory() {
     return (
         <div className='TextContent'>
-            <iframe width="100%" height="300" src="https://player.vimeo.com/video/696693117" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-            <iframe width="100%" height="300" src="https://player.vimeo.com/video/696707531" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            <iframe width="100%" height="300" src="https://player.vimeo.com/video/696693117" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen=""></iframe>
+            <iframe width="100%" height="300" src="https://player.vimeo.com/video/696707531" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen=""></iframe>
             <br></br>
             It all started in August of 2017. Aditya and Brinda added to the storied history of on-set romances by
             playing brother and sister on the set of Breakfast in Bangalore. Despite both sharing NYU as an alma mater
@@ -66,7 +66,7 @@ function OurStory() {
             share this wedding weekend with you. This is a special moment in time, and we want to honor YOU for being a part of our lives
             and contributing to the way we are today.<br></br>
 
-            <iframe width="100%" height="500" src="https://player.vimeo.com/video/671746700" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            <iframe width="100%" height="500" src="https://player.vimeo.com/video/671746700" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen=""></iframe>
         </div>
     );
 }

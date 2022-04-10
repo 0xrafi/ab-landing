@@ -48,7 +48,6 @@ function RSVP() {
         <div className='rsvpPage'>
             <img src={rsvpPic} className="normalPic" />
             Please RSVP by April 15th, 2022.<br></br><br></br>
-
             {(password == "ABLA2022" || password == "abla2022") && getGuestFromEmail(email) ?
                 <RsvpForm email={email} buildOptions={buildOptions} /> :
                 <div>
@@ -60,7 +59,6 @@ function RSVP() {
                         }}
                         name='password'
                         type='text'
-
                     />
                     <br></br><br></br>
                     <label>Enter your email:</label>
@@ -73,7 +71,6 @@ function RSVP() {
                         type='text'
                     />
                 </div>
-
             }
         </div>
     );
