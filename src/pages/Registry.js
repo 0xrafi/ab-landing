@@ -9,7 +9,7 @@ function Registry() {
             <img src={registry} className="normalPic" />
             <img src={zolaLogo} className="zolaLogo" />
             <div className='buttonWrapper'>
-                <a href="https://www.zola.com/registry/collection-item/624df2776af8ff28c43ab13b" target="_blank">
+                <a href="https://www.zola.com/registry/collection-item/624df2776af8ff28c43ab13b" target="_blank" rel="noreferrer">
                     <button type='submit'>CONTRIBUTE TO OUR NEWLYWED FUND</button>
                 </a>
             </div>

@@ -11,7 +11,7 @@ const googleScriptURL =
 function RsvpForm({ email, buildOptions }: Props) {
   const onSubmit = (event) => {
     event.preventDefault();
-    const form = document.getElementById("my-form");
+    const form = document.getElementById("my-form"); //TODO remove DOM access for actual React code
     const action = event.target.action;
     const data = new FormData(form as HTMLFormElement);
     fetch(action, {
