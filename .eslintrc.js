@@ -1,7 +1,8 @@
 module.exports = {
     env: {
         "browser": true,
-        "es2022": true
+        "es2022": true,
+        "node": true
     },
     extends: [
         "eslint:recommended",
@@ -16,7 +17,7 @@ module.exports = {
         "requireConfigFile": false
     },
     plugins: [
-        "react", "typescript"
+        "react", "jsx"
     ],
     rules: {
     },
