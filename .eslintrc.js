@@ -1,4 +1,10 @@
 module.exports = {
+    parser: "@babel/eslint-parser",
+    settings: {
+        "react": {
+            "version": "detect"
+        }
+    },
     env: {
         "browser": true,
         "es2022": true,
@@ -14,14 +20,16 @@ module.exports = {
         },
         "ecmaVersion": 13,
         "sourceType": "module",
-        "requireConfigFile": false
+        "requireConfigFile": false,
+        "babelOptions": {
+            "presets": ["@babel/preset-react"]
+         }
     },
     plugins: [
         "react", "jsx"
     ],
     rules: {
     },
-    parser: "@babel/eslint-parser",
     overrides: [{
         "files": ["**/*.ts","**/*.tsx"],
         "parser": 'typescript-eslint-parser',
