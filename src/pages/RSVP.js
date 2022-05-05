@@ -23,7 +23,7 @@ function RSVP() {
     const [spreadsheetData, setSpreadsheetData] = useState({});
 
     useEffect(() => {
-        const parsedData = parseFile().then((response) => {
+        parseFile().then((response) => {
             setSpreadsheetData(response);
         })
             .catch((err) => {
@@ -52,7 +52,7 @@ function RSVP() {
     return (
         <>
             <img src={rsvpPic} className="normalPic" />
-            Please RSVP by April 15th, 2022.
+            Please RSVP by May 13th, 2022.
             {(password == "ABLA2022" || password == "abla2022") && getGuestFromEmail(email) ?
                 <RsvpForm email={email} buildOptions={buildOptions} /> :
                 <div>
